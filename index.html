@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="YahyaSF — شاهد المسلسل وحلقاته.">
+  <title>YahyaSF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="YahyaSF"><span class="brand-mark">Y</span><span>Yahya<span class="brand-accent">SF</span></span></a>
+    <span class="top-note">مساحتك للمشاهدة</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> مكتبة المسلسلات</p>
+        <h1>حكاية تستحق<br><em>المشاهدة.</em></h1>
+        <p class="intro">تابع الحلقات من مكان واحد، واختر الحلقة التي تريد مشاهدتها.</p>
+        <a class="primary-btn" href="#episodes">استكشف الحلقات <span>←</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="art-word">Y<span>SF</span></div><div class="art-caption">YOUR SERIES SPACE</div>
+      </div>
+    </section>
+
+    <section class="player-section" id="watch">
+      <div class="section-heading">
+        <div><p class="eyebrow">NOW PLAYING</p><h2 id="playing-title">اختر حلقة للبدء</h2></div>
+        <span class="quality">FULL HD · 1080P</span>
+      </div>
+      <div class="video-shell">
+        <video id="player" controls playsinline preload="metadata" controlsList="nodownload">
+          متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+        <div class="video-placeholder" id="placeholder"><div class="play-symbol">▶</div><p>اختر إحدى الحلقات لبدء المشاهدة</p></div>
+      </div>
+      <p class="player-hint" id="player-status">يتم تحميل قائمة الحلقات عند الاتصال بالخادم.</p>
+    </section>
+
+    <section class="episodes-section" id="episodes">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>الحلقات <span class="muted-count" id="episode-count">15</span></h2></div>
+        <span class="subtle-label">اختر حلقتك التالية</span>
+      </div>
+      <div class="episode-grid" id="episode-grid">
+        <div class="loading">جارٍ الاتصال بخادم الحلقات…</div>
+      </div>
+    </section>
+  </main>
+  <footer><span class="brand small"><span class="brand-mark">Y</span> Yahya<span class="brand-accent">SF</span></span><span>© <span id="year"></span> YahyaSF</span></footer>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
